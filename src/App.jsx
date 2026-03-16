@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   const date = new Date();
-  const [time, setTime] = useState(date.toLocaleTimeString());
+  const [time, setTime] = useState();
   const [greet, setGreet] = useState('Day');
   setInterval(() => {
     setTime(date.toLocaleTimeString())
