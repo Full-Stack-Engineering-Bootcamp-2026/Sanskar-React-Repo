@@ -10,6 +10,7 @@ function App() {
   return(
     <div>
       <LikeButton/>
+      <LikeButton/>
     </div>
   )
 }
