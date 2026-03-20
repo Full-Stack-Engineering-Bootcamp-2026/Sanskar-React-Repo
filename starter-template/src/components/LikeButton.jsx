@@ -15,7 +15,7 @@ const LikeButton = () => {
     <>
         <h3>{count} <span>{count > 1?"Likes":"Like"}</span></h3>
         {/* <button onClick={setCount(prev => prev + 1)}>Like</button> */}
-        <button onClick={handleClick}>Like</button>
+        {count <= 10 ?<button onClick={handleClick}>Like</button>:<button style={{backgroundColor:"red"}} onClick={handleClick}>Like</button>}
         <button onClick={()=>setCount(0)}>Reset</button> 
         <button onClick={handleDislikeClick}>Dislike</button>
     </>
