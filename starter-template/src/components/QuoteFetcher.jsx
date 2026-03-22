@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import fetchQuotes from '../../api/api'
+import fetch from '../api/api'
 
 
 const QuoteFetcher = () => {
@@ -7,7 +7,7 @@ const QuoteFetcher = () => {
   const [loading, setLoading] = useState(false);
   const handleClick = async () => {
     setLoading(true);
-    const response = await fetchQuotes();
+    const response = await fetch.fetchQuotes();
     setData(response);
     setLoading(false);
   }

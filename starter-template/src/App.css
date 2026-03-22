@@ -12,6 +12,13 @@
     padding: 1%;
     border: 1px solid rgb(229, 177, 177);
 }
+.users{
+    width: 50%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 1%;
+    border: 1px solid rgb(229, 177, 177);
+}
 .app{
     display: flex;
 }
