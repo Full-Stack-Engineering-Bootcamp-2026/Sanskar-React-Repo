@@ -72,8 +72,8 @@ const options = {
 
 const LineChart = () => {
     return (
-        <Card className='col-span-1'>
-            <CardContent className='h-80'>
+        <Card className='col-span-1 py-5'>
+            <CardContent className='h-60'>
                 Lines
                 <Line data={lineData} options={options} />
             </CardContent>

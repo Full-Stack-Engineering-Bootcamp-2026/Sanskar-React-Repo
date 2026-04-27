@@ -27,7 +27,7 @@ export function App() {
           <Route path="/tables" element={<Tables />} />
           <Route path="/modals" element={<Modals />} />
           <Route path="/blank" element={<Blank />} />
-          <Route path="/404" element={<FourOFour />} />
+          <Route path="*" element={<FourOFour />} />
         </Route>
 
         <Route element={<AuthLayout />}>

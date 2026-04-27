@@ -64,8 +64,8 @@ const data = {
 };
 const BarChart = () => {
     return (
-        <Card className='col-span-1'>
-            <CardContent className='h-80'>
+        <Card className='col-span-1 py-10'>
+            <CardContent className='h-60'>
                 Bars
                 <Bar options={options} data={data} />
             </CardContent>

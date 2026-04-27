@@ -25,8 +25,8 @@ const options: ChartOptions<"doughnut"> = { //type warning solve krne ke liye
 }
 const DoughNutChart = () => {
   return (
-    <Card className='col-span-1'>
-      <CardContent className='h-80 flex flex-col items-center'>
+    <Card className='col-span-1 py-5'>
+      <CardContent className='h-60 flex flex-col'>
         Doughnut/Pie
         <Doughnut data={doughNutdata} options={options} />
       </CardContent>

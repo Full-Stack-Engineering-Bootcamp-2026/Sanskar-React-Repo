@@ -52,28 +52,27 @@ export function AppSidebar() {
         if (item.children) {
             return (
                 <SidebarGroup>
-            <Accordion type="single" collapsible>
-                <AccordionItem value="pages">
-                    <AccordionTrigger className="flex gap-4 items-center">
-                        <LuBlocks />
-                        <span>Pages</span>
-                    </AccordionTrigger>
+                    <Accordion type="single" collapsible>
+                        <AccordionItem value="pages">
+                            <AccordionTrigger className="flex gap-4 items-center font-inter font-bold text-[14px] pt-0">
+                                <LuBlocks /> Pages
+                            </AccordionTrigger>
 
-                    <AccordionContent className="ml-6 mt-2 flex flex-col gap-2 decoration-0">
-                        {item.children.map((child) => (
-                            <NavLink
-                                key={child.path}
-                                to={`/${child.path}`}
-                                onClick={() => setOpenMobile(false)}
-                                className="text-sm hover:text-primary"
-                            >
-                                {child.name}
-                            </NavLink>
-                        ))}
-                    </AccordionContent>
-                </AccordionItem>
-            </Accordion>
-        </SidebarGroup>
+                            <AccordionContent className="flex flex-col gap-2 decoration-0">
+                                {item.children.map((child) => (
+                                    <NavLink
+                                        key={child.path}
+                                        to={`/${child.path}`}
+                                        onClick={() => setOpenMobile(false)}
+                                        className="ml-6 ext-sm hover:text-primary"
+                                    >
+                                        {child.name}
+                                    </NavLink>
+                                ))}
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </SidebarGroup>
             )
         }
         if (item.type === "button") {
